@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>oServiceFactory implementation</title>
+
+</head>
+<body ng-app="app">
+    <div ng-controller="emp">
+        <div>
+            Value of a is {{a}}, but you can change
+            <input type="text" ng-model="a" /><br>
+            Value of b is {{b}}, but you can change
+            <input type="text" ng-model="b" /><br>
+        </div>
+        Sum = {{sum}}<br>
+        <button ng-click="doSum()">Calculate</button>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <!-- <script src="app__custom-factory.js"></script> -->
+    <!-- <script src="app__custom-service.js"></script> -->
+    <script src="app__custom-provider.js"></script>
+</body>
+</html>
