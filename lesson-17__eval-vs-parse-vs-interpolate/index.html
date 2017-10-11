@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>$eval vs $parse vs $intepolate demo</title>
+
+</head>
+<body ng-app="app">
+    <div id="app-root" ng-controller="sample">
+        a = {{a}}<br>
+        b = {{b}}
+        <div>
+            <button ng-click="demoParse()">$parse Demo</button>
+            <button ng-click="demoInterpolate()">$interpolate Demo</button>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script
+    src="http://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
