@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Directive's isolated scope demo</title>
+
+</head>
+<body ng-app="app">
+    <div id="app-root" ng-controller="stringExample">
+        Controller: a = {{a}}, b = {{b}}, p = {{p}}, q = {{q}}
+        <hr>
+        Directive 1 Instance 1: <div message a="Welcome" b="To Hell"></div><br>
+        Directive 1 Instance 2: <div message a="{{p}}" b="{{q}}"></div><br>
+        Directive 1 Instance 3: <div message a="{{p * 10}}" b="{{q * 10}}"></div><br>
+        <hr>
+        Directive 2 Instance 1: <div message2 m="{{a}}" n="{{b}}"></div><br>
+    </div>
+
+    <br><br><hr>
+
+    <div id="emp-root" ng-controller="employeeController">
+        employeeController: empno = {{emp.empno}}, ename = {{emp.ename}}
+        <hr>
+        Employee Directive 1 Instance 1: <div emp-info employee="emp"></div><br>
+        Employee Directive 2 Instance 1: <div emp-info2 o-emp="emp2"></div>
+    </div>
+
+    <br><br><hr>
+    
+    <div id="fn-root" ng-controller="functionExampleController">
+        functionExampleController: a = {{a}}, b = {{b}}<br>
+        <button ng-click="doSum(a, b)">doSum</button>
+        <hr>
+        showSum directive instace 1:<br>
+        <div show-sum p="{{a}}" q="{{b}}" sum-fn="doSum"></div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script
+    src="http://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
