@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transclusion usage variations demo</title>
+
+</head>
+<body ng-app="app">
+    <div ng-controller="sampleController">
+        <div>This is Controller:</div>
+        <hr>
+        Message 1:<div message1>This is directive's inner content</div>
+        <hr>
+        Message 2:<div message2>This is directive's inner content</div>
+    </div>
+    
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
